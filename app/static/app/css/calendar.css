@@ -1,0 +1,62 @@
+
+.my_page p {
+    text-align: center;
+    width: 450px;
+    height: 100px;
+    background-color: rgb(245, 1000, 1000);
+    border: 7px solid black;
+    
+    
+
+
+    margin: 100 auto;
+    border-radius: 70px;
+    font-size: 63px;
+    color: black;
+    font-family: 고딕;
+    font-weight: 500;
+
+}
+td {
+    width: 110px;
+    height: 110px;
+}
+
+.Calendar { 
+    text-align: center;
+    margin: 0 auto; 
+    font-size: 40px;
+    font-family:굴림;
+    font-weight: 1000;
+}
+
+.Calendar>thead>tr:first-child>td { font-weight: 1000;}
+
+.Calendar>thead>tr:last-child>td {
+    background-color: gray;
+    color: white;
+    
+}        
+
+.pastDay{ background-color: whitesmoke;
+    
+    }
+
+.today{            
+    background-color: #FFB400;  
+    border : 3px;          
+    cursor: pointer;
+    border: solid 5px #FF0000;
+    
+}
+
+.futureDay{            
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.futureDay.choiceDay, .today.choiceDay{            
+    background-color: #FFB400;            
+    color: #fff;
+    cursor: pointer;
+}

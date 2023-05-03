@@ -1,0 +1,214 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Youtube</title>
+
+  <link rel="canonical" href="https://getbootstrap.kr/docs/5.2/examples/album/">
+  <link rel="stylesheet" href="{% static 'app/css/youtube.css'%}">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+
+  <!-- 내비게이션바 -->
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Youtube</h4>
+            <p class="text-muted">다양한 분야의 동기부여 영상을 모아놓았습니다.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Youtube</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://www.youtube.com/channel/UCfGiHwC9jgkpgswEvsSL0fA" class="text-white">조던피터슨</a></li>
+              <li><a href="https://www.youtube.com/channel/UCsJ6RuBiTVWRX156FVbeaGg" class="text-white">슈카월드</a></li>
+              <li><a href="https://www.youtube.com/@motivationklass" class="text-white">동기부여학과</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:8000/app/home/" style="color: white;">SDP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/app/news/" style="color: white;">뉴스</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/app/youtube/" style="color: white;">유튜브</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/app/book/" style="color: white;">책</a>
+                </li>
+                
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    style="color: white;" aria-expanded="false">
+                    마이페이지
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/app/diary/" class="text-white">일기</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/app/todolist/" class="text-white">TodoList</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/app/calendar/">달력</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- 내비게이션바 끝 -->
+
+  <!-- 본 내용 -->
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="title">유튜브</h1>
+          <p class="lead text-muted">
+            목표를 이루기 위해 동기부여가 필요하다면 이 방에서 다양한 영상들을 참고해보세요.
+            여러분의 자신감과 동기부여를 높여줄 것입니다.
+        </p>
+          <p>
+            <a href="https://www.youtube.com/" target="_blank" class="btn btn-primary my-2"
+              style="background-color: red; border-color: red;">Youtube</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="show">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791168473690.jpg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em"></text></svg>
+
+              <div class="card-body">
+                <p class="card-text">유튜브</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">찜</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="address">
+        <hr>
+        <span>주소 : 세종특별자치시 조치원읍 세종로 2639 (신안리 300) 홍익대학교 세종캠퍼스 (우) 30016</span>
+        <br>
+        <span>전화 : 010-2023-0430</span>
+        <span>등록일자 : 2023.04.30</span>
+        <span>개발자 : 홍준표, 유정현, 유다연</span>
+        
+      </p>
+
+      <!-- 밑에   사업자명 : 등록번호: 등등 정보들 표시하는 곳 -->
+      <p class="address">
+        <span>사업자명 : 무유홍</span>
+        <span>사업자등록번호 : 010-2023-0430</span>
+        <span>대표자명 : 홍준표, 유정현, 유다연</span>
+        <em>통신판매업신고번호 : 010-2023-0430</em>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script>
+    const data = fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBcYq5zgED0rgC3aX00om0ThqbRPQ5V020&part=snippet&maxResults=10&order=date&type=video&q=동기부여영상');
+    // const data = fetch('http://ggoreb.com/api/youtube.jsp');
+    data.then((res) => res.json()).then((res) => {
+      console.log(res)
+      items = res.items
+      item_len = items.length-1
+      let code = ''
+      for(let i=0;i<item_len;i++){
+        item=items[i]
+        console.log(item)
+        title = item.snippet.channelTitle
+        thumbnails = item.snippet.thumbnails.default.url
+        code += ` <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="${thumbnails}"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /> </svg>
+                
+              <div class="card-body">
+                <p class="card-text">${title}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">자세히</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">찜</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>`
+      }
+      
+      
+      document.querySelector('#show').innerHTML = code;
+    })
+
+  </script>
+
+
+</body>
+
+</html>
